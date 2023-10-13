@@ -1,0 +1,45 @@
+.margin-top {
+  margin-top: 2rem;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  /* border: 1px #663399 solid; */
+}
+
+/* xs */
+@media (min-width: 450px) {
+  .container {
+    max-width: 450px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+/* 2xl */
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

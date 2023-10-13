@@ -1,0 +1,412 @@
+/* gobal setting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  font-family: sans-serif;
+}
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  background-color: #f8f7fd;
+}
+.main {
+  background-color: rgb(251, 247, 247);
+  height: 32.5rem;
+  width: 77rem;
+  border-radius: 0.5rem;
+  display: grid;
+  margin: 1rem;
+  position: sticky;
+}
+.header {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.word {
+  /* margin-left: 2rem; */
+}
+.menu a,
+.third a,
+.three a {
+  text-decoration: none;
+  color: black;
+}
+.menu {
+  display: flex;
+  margin: 1.2rem;
+  /* margin-left: 15rem; */
+}
+.menu a {
+  padding-left: 1rem;
+}
+.third {
+  margin: 1.2rem;
+  /* margin-left: 18rem; */
+  align-items: center;
+}
+.third button {
+  margin-left: 3rem;
+  height: 30px;
+  background-color: rgb(46, 46, 100);
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  width: 5rem;
+}
+.third button a {
+  color: white;
+  font-size: 0.5rem;
+}
+
+nav {
+  padding: 0 1rem;
+}
+
+/* .one {
+  margin-left: 10rem;
+} */
+/* .two {
+  margin-top: -3rem;
+} */
+#two {
+  margin-top: -3rem;
+  margin-left: 7rem;
+}
+
+/* .two h1 {
+  font-size: 3rem;
+} */
+.three button {
+  height: 2rem;
+  width: 7rem;
+  background-color: rgb(46, 46, 100);
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+.three button a {
+  color: aliceblue;
+  font-size: 0.5rem;
+  font-weight: bolder;
+}
+#white {
+  background-color: white;
+}
+#white a {
+  color: black;
+}
+.contents {
+  background-color: aquamarine;
+  height: 18rem;
+  margin-top: -1rem;
+}
+.menu {
+  display: none;
+}
+.third {
+  display: none;
+}
+
+/* ################################ */
+/* HERO SECTION   */
+/* ################################ */
+
+.hero {
+  display: grid;
+  justify-content: center;
+  margin-top: -2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.three {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.three button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left span {
+  display: inline-block;
+}
+.left {
+  text-align: left;
+}
+.left #top {
+  border-radius: 3rem;
+  border: white solid 5px;
+  float: left;
+}
+.icon {
+  margin-top: -4rem;
+  margin-left: 15rem;
+  border: white solid 4px;
+  width: 30px;
+  border-radius: 100rem;
+}
+.rectangle {
+  border: solid 10px white;
+  background-color: #f5d885;
+  height: 15rem;
+  /* width: 20rem; */
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.middle {
+  background-color: violet;
+  /* width: 350px; */
+  width: 320px;
+  height: 300px;
+  display: flex;
+  border: solid 10px white;
+  border-radius: 10px;
+  position: relative;
+  /* align-items: center; */
+  justify-content: center;
+}
+/* */
+.middle img {
+  position: absolute;
+  margin-top: -3rem;
+  width: 330px;
+  height: 330px;
+}
+.middle h2 {
+  margin-left: -11.5rem;
+  margin-top: -6rem;
+  position: absolute;
+  font-size: 38px;
+}
+.icons {
+  width: 50px;
+  height: 50px;
+  margin-left: 2rem;
+}
+.icons #message {
+  color: white;
+  margin-left: -20rem;
+  margin-top: -4rem;
+  font-size: 70px;
+}
+.icons i {
+  transform: rotate(-120deg);
+}
+.icons #star {
+  font-size: 20px;
+  color: rgb(239 215 147);
+  margin-left: -4rem;
+  margin-top: -1rem;
+  position: absolute;
+}
+
+.right {
+  /* background-color: rgb(16, 190, 196); */
+  /* width: 350px; */
+  height: 600px;
+  position: relative;
+  /* display: flex;
+  gap: 20px; */
+}
+
+.right1 {
+  background-color: rgb(188, 188, 3);
+  /* width: 350px; */
+  width: 320px;
+
+  height: 350px;
+  border: solid white 10px;
+  border-radius: 10px;
+  background-color: rgb(169 222 233);
+}
+.right1 #amount {
+  margin-left: -10rem;
+  margin-top: 2rem;
+}
+.right1 #week {
+  margin-left: 15rem;
+  margin-top: -1.5rem;
+  position: absolute;
+}
+.right1 h1 {
+  font-size: 50px;
+  margin-left: -7rem;
+}
+.right1 #cle {
+  font-size: 30px;
+  margin-left: -15rem;
+  margin-top: 7rem;
+}
+.right1 #chart {
+  color: white;
+  font-size: 10px;
+  margin-left: -1.3rem;
+  margin-top: 7.6rem;
+  position: absolute;
+  transform: rotate(270deg);
+}
+
+.right2 {
+  background-color: #d9d9ff;
+  /* width: 350px; */
+  width: 320px;
+
+  height: 200px;
+  margin-top: 3rem;
+  border: solid 10px white;
+  border-radius: 10px;
+}
+.right2 h4 {
+  margin: 30px;
+  /* display: block; */
+  position: absolute;
+}
+.right2 p {
+  margin-left: 250px;
+  margin-top: 1.9rem;
+  position: absolute;
+}
+.lastprt {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 3rem;
+}
+.icons2 {
+  background-color: #f5d885;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 18rem;
+  margin-top: 1rem;
+  position: absolute;
+  border: solid 10px white;
+}
+.icons2 #circle {
+  color: rgb(252 187 201);
+  font-size: 40px;
+}
+.icons2 #heart {
+  color: white;
+  font-size: 20px;
+  margin-top: 0.8rem;
+  margin-left: -2rem;
+  position: absolute;
+}
+.menu-icon {
+  display: flex;
+}
+.alldiv {
+  display: flex;
+  margin-top: -6rem;
+  margin-left: 6rem;
+  gap: 15px;
+  border: solid white px;
+}
+.bar1,
+.bar2,
+.bar3,
+.bar4 {
+  width: 35px;
+  border-radius: 10px;
+  background-color: #9bcad9;
+}
+.bar1 {
+  height: 50px;
+  margin-top: 2.9rem;
+}
+
+.bar2 {
+  height: 100px;
+  margin-top: -0.2rem;
+}
+
+.bar3 {
+  height: 80px;
+  margin-top: 0.9rem;
+}
+.bar4 {
+  background-color: black;
+  height: 150px;
+  margin-top: -3.4rem;
+}
+
+/* //media query */
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+  }
+  .third {
+    display: flex;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  /* ################################ */
+  /* HERO SECTION   */
+  /* ################################ */
+  h6 {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  .three button {
+    width: 31%;
+    height: 42px;
+    border-radius: 25px;
+  }
+  /* .lastprt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  } */
+
+  .rectangle {
+    margin-top: 2rem;
+  }
+
+  .lastprt {
+    /* margin-top: 30rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: -5rem;
+    gap: 1.5rem;
+    /* position: absolute; */
+  }
+  .left {
+    /* background-color: #9bcad9; */
+    width: 20rem;
+  }
+  .left h1 {
+    font-size: 30px;
+  }
+  .left {
+    margin-top: 10rem;
+    /* position: absolute; */
+  }
+  .right2 {
+    margin-top: 1rem;
+  }
+}
