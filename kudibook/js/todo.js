@@ -27,17 +27,17 @@ const filters = {
 };
 
 const renderTodos = function (todos, filters) {
-  const filteredTodos = todos.filter(function (todo) {
+  let filteredTodos = todos.filter(function (todo) {
     return todo.text.toLowerCase().includes(filters.searchText.toLowerCase());
   });
 
-  // filteredTodos = filteredTodos.filter(function (todo) {
-  //   if (filters.hideCompleted) {
-  //     return !todo.completed;
-  //   } else {
-  //     return true;
-  //   }
-  // });
+  filteredTodos = filteredTodos.filter(function (todo) {
+    if (filters.hideCompleted) {
+      return !todo.completed;
+    } else {
+      return true;
+    }
+  });
 
   const incompleteTodos = filteredTodos.filter(function (todo) {
     return !todo.completed;
@@ -78,9 +78,9 @@ document.querySelector("#new-todo").addEventListener("submit", function (e) {
   e.target.elements.text.value = "";
 });
 
-// document
-//   .querySelector("#hide-completed")
-//   .addEventListener("change", function (e) {
-//     filters.hideCompleted = e.target.checked;
-//     renderTodos(todos, filters);
-//   });
+document
+  .querySelector("#hide-completed")
+  .addEventListener("change", function (e) {
+    filters.hideCompleted = e.target.checked;
+    renderTodos(todos, filters);
+  });
