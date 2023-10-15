@@ -4,25 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="todo.css" />
   </head>
   <body>
-    <h1>To dos</h1>
-    <input type="text" name="" placeholder="filter todos  " id="search-text" />
-    <label for="">
-      <input type="checkbox" name="" id="hide-completed" />Hide completed
-    </label>
-
-    <div id="todos"></div>
-    <form id="new-todo">
+    <div class="all">
+      <h1>To dos</h1>
       <input
         type="text"
-        name="text"
-        id="new-todo-text"
-        placeholder="enter something"
+        name=""
+        placeholder="filter todos  "
+        id="search-text"
+        style="
+          width: 20rem;
+          height: 3rem;
+          border: solid 2px darkblue;
+          border-radius: 50px;
+        "
       />
-      <button id="add-todo">Add to do</button>
-    </form>
+      <label for="">
+        <input type="checkbox" name="" id="hide-completed" />Hide completed
+      </label>
 
-    <script src="todo.js"></script>
+      <div id="todos"></div>
+      <form id="new-todo">
+        <input
+          type="text"
+          name="text"
+          id="new-todo-text"
+          placeholder="enter something"
+          style="
+            width: 20rem;
+            height: 3rem;
+            border: solid 2px darkblue;
+            border-radius: 50px;
+          "
+        />
+        <button id="add-todo">Add to do</button>
+      </form>
+
+      <script src="todo.js"></script>
+    </div>
   </body>
 </html>
