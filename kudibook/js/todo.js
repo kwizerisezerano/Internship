@@ -80,3 +80,7 @@ document
     filters.hideCompleted = e.target.checked;
     renderTodos(todos, filters);
   });
+
+document.querySelector("#filter-by").addEventListener("change", function (e) {
+  console.log(e.target.value);
+});
