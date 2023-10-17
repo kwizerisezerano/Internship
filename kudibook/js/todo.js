@@ -27,18 +27,12 @@ const filters = {
 };
 
 const renderTodos = function (todos, filters) {
-  let filteredTodos = todos.filter(function (todo) {
-    return todo.text.toLowerCase().includes(filters.searchText.toLowerCase());
-  });
-
-  filteredTodos = filteredTodos.filter(function (todo) {
-    return filters.hideCompleted || todo.completed;
-
-    // if (filters.hideCompleted) {
-    //   return !todo.completed;
-    // } else {
-    //   return true;
-    // }
+  const filteredTodos = todos.filter(function (todo) {
+    const searchTextMatch = todo.text
+      .toLowerCase()
+      .includes(filters.searchText.toLowerCase());
+    const hideCompletedMatch = filters.hideCompleted || todo.completed;
+    return searchTextMatch && hideCompletedMatch;
   });
 
   const incompleteTodos = filteredTodos.filter(function (todo) {
